@@ -1,0 +1,19 @@
+{
+  "name": "funciones-js",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "ejercicios": "node ejercicios/app.js",
+    "retos": "node retos/app.js",
+    "supermercado": "node supermercado/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

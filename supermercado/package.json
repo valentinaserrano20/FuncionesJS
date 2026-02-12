@@ -1,11 +1,11 @@
 {
-  "name": "ejercicio1",
+  "name": "supermercado",
   "version": "1.0.0",
-  "description": "",
+  "description": "Ejercicio de supermercado",
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
