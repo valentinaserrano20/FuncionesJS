@@ -68,10 +68,10 @@ function ejecutarCompra() {
   let cantidad = parseInt(prompt("Ingresa la cantidad: "));
 
   try {
-    const { subtotal, iva, total } = calcularTotal(precio, cantidad);
-    console.log(`Subtotal: ${subtotal}`);
-    console.log(`IVA: ${iva}`);
-    console.log(`Total: ${total}`);
+    const resultado = calcularTotal(precio, cantidad);
+    console.log(`Subtotal: ${resultado.subtotal}`);
+    console.log(`IVA: ${resultado.iva}`);
+    console.log(`Total: ${resultado.total}`);
   } catch (error) {
     console.error(`Error en compra: ${error.message}`);
   }

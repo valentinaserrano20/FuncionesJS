@@ -26,7 +26,10 @@ function ejecutarRetoAcademico() {
     /* se llama a la funcion mostrarResultadoAcademico con los datos ingresados, esta funcion retorna un mensaje con el resultado academico completo, el cual se muestra al usuario */
     const resultado = mostrarResultadoAcademico(nombre, nota1, nota2, nota3);
     console.log(`\nResultado de ${resultado.nombre}:`);
-    console.log(`  Notas: ${resultado.nota1}, ${resultado.nota2}, ${resultado.nota3}`);
+    console.log("  Notas:");
+    resultado.notas.forEach(nota => {
+      console.log(nota)
+    })
     console.log(`  Promedio: ${resultado.promedio}`);
     console.log(`  Estado: ${resultado.resultado}`);
   } catch (error) {
@@ -62,10 +65,10 @@ function ejecutarRetoAnalisis() {
 
   try {
     const resultado = analizarNumero(numero);
-    console.log(`\nAnalisis del numero ${resultado.numero}:`);
-    console.log(`  Par o Impar: ${resultado.parImpar}`);
-    console.log(`  Positivo o Negativo: ${resultado.positivoNegativo}`);
-    console.log(`  Primo: ${resultado.primo}`);
+    console.log(`\nAnalisis del numero ${numero}:`);
+    console.log(`  Par o Impar: ${resultado.esPar}`);
+    console.log(`  Positivo o Negativo: ${resultado.esPositivo}`);
+    console.log(`  Primo: ${resultado.esPrimo}`);
   } catch (error) {
     console.error(`Error: ${error.message}`);
   }

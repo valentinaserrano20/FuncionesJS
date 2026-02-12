@@ -52,5 +52,9 @@ export const mostrarResultadoAcademico = (nombre, nota1, nota2, nota3) => {
   const resultado = determinarAprobacion(promedio);
 
   // Retornamos el mensaje final con el nombre del estudiante, su promedio (redondeado a 2 decimales) y si aprobo o reprobo
-  return `${nombre} - Promedio: ${promedio.toFixed(2)} - ${resultado}`;
+  return {
+    notas:[nota1,nota2,nota3],
+    promedio: promedio,
+    resultado: resultado
+  };
 }

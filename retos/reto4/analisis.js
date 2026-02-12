@@ -74,5 +74,10 @@ export const analizarNumero = (numero) => {
   const primo = esPrimo(numero);
 
   // Retornamos la informacion
-  return `${numero} es ${parImpar}, ${posNeg} y ${primo}`;
+  return {
+    esPar: parImpar,
+    esPositivo: posNeg,
+    esPrimo: primo,
+
+  }
 }

@@ -41,5 +41,9 @@ export const calcularTotal = (precio, cantidad) => {
   const total = subtotal + iva;
 
 /*   retornamos el total a pagar, que es el resultado final de la compra */
-  return total;
+  return {
+    total: total,
+    iva: iva,
+    subtotal: subtotal,
+  };
 }
